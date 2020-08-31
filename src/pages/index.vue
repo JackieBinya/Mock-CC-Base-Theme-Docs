@@ -1,14 +1,15 @@
 <template>
-  <Layout :sidebar="false">
+  <Layout :sidebar="true">
     <div class="content">
-      <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
-      <nav>
-        <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/getting-started" text="Introduction" icon="play-icon" />
-        <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
-      </nav>
-      <GitLink class="git" size="large" />
+      <g-image src="~/assets/img/mock-cc-screenshot.png"/>
+    
+     <p>Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Dapibus ultrices in iaculis nunc sed. Duis at tellus at urna. Facilisis gravida neque convallis a cras. Scelerisque in dictum non consectetur a. Nisi vitae suscipit tellus mauris a diam. Nunc lobortis mattis aliquam faucibus. Integer quis auctor elit sed vulputate. Cras pulvinar mattis nunc sed.</p>
+
+     <ul>
+       <li>Scelerisque in dictum non consectetur a. Nisi vitae suscipit tellus mauris a diam. Nunc lobortis mattis aliquam faucibus. Integer quis auctor elit sed vulputate.</li>
+       <li>Scelerisque in dictum non consectetur a. Nisi vitae suscipit tellus mauris a diam. Nunc lobortis mattis aliquam faucibus. Integer quis auctor elit sed vulputate.</li>
+       <li>Scelerisque in dictum non consectetur a. Nisi vitae suscipit tellus mauris a diam. Nunc lobortis mattis aliquam faucibus. Integer quis auctor elit sed vulputate.</li>
+     </ul>
     </div>
   </Layout>
 </template>
@@ -84,5 +85,11 @@ nav {
   @include respond-above(md) {
     margin: 5em 0 0;
   }
+}
+
+img{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1em;
 }
 </style>

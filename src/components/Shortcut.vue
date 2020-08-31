@@ -1,10 +1,7 @@
 <template>
   <article>
     <h2>
-      <g-link :to="link">
-        <component :is="icon"></component>
-        {{ text }}
-      </g-link>
+      {{ text }}
     </h2>
   </article>
 </template>
@@ -19,18 +16,10 @@ export default {
     EyeIcon
   },
   props: {
-    link: {
-      type: String,
-      required: true
-    },
     text: {
       type: String,
       required: true
     },
-    icon: {
-      type: String,
-      required: true
-    }
   }
 }
 </script>

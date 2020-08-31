@@ -1,22 +1,20 @@
 <template>
   <header class="header" :class="{'header--scrolled' : pageScrolled}">
-    <Logo :color="logoColor" />
+    <Logo />
     <nav class="nav">
-      <ThemeSwitch v-on:theme-change="updateLogo" />
       <MenuToggle v-if="menuToggle" />
     </nav>
   </header>
 </template>
 
 <script>
-import ThemeSwitch from '~/components/ThemeSwitch.vue'
+
 import MenuToggle from '~/components/MenuToggle.vue'
 import Logo from '~/components/Logo.vue'
 import throttle from 'lodash/throttle'
 
 export default {
   components: {
-    ThemeSwitch,
     MenuToggle,
     Logo
   },
@@ -29,7 +27,6 @@ export default {
   data() {
     return {
       pageScrolled: false,
-      logoColor: 'bright'
     }
   },
   methods: {
@@ -64,29 +61,16 @@ export default {
   right: -12px;
   left: 0;
   z-index: 10;
-  padding: 15px 30px;
+  padding: 16px 8px;
+  background: $backgroundBright;
   transition: padding .15s linear, background .15s linear, border-color .15s linear;
   will-change: padding, background;
   border-bottom: 1px solid transparent;
 
-  @include respond-above(sm) {
-    padding: 30px;
-  }
+  @include respond-above(sm);
 
   &--scrolled {
-    @include respond-below(sm) {
-      padding: 15px 30px;
-
-      .dark & {
-        background: $sidebarDark;
-        border-color: shade($sidebarDark, 40%);
-      }
-
-      .bright & {
-        background: $sidebarBright;
-        border-color: shade($sidebarBright, 10%);
-      }
-    }
+    @include respond-below(sm);
   }
 }
 

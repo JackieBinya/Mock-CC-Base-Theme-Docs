@@ -4,18 +4,12 @@ date: 2018-09-15 07:42:34
 slug: getting-started
 ---
 
-## What is Jamdocs
+To effectively use the wp base theme you are advised to have it installed in your local development environment. The information outlined below will help you achieve that with minimal effort.
 
-Jamdocs is a documentation theme for Gridsome, built to spin up quick, beautiful and static documentation sites fast without hassle. Since there is no theming system for Gridsome yet, Jamdocs comes with Gridsome, plug-ins and packages as dependencies.
+## Requirements
 
-## Local installation
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Even though Jamdocs is so simple, you dont really need to set it up localy (you could just fork it on github to edit styles and md-files) - if you want to change it up a bit I recommend setting up localy for a better developer experience.
+## Installation Guide
 
-To set up a new instance of Jamdocs, and start developing just clone the project from Github like, go to the directory and run gridsome:
-
-```bash
-git clone https://github.com/samuelhorn/jamdocs project-name
-cd project-name
-gridsome develop
-```
+Egestas tellus rutrum tellus pellentesque. Nunc non blandit massa enim nec dui nunc mattis. Aliquet enim tortor at auctor urna nunc id cursus metus. Tristique magna sit amet purus gravida. Vel turpis nunc eget lorem dolor sed viverra ipsum. 
