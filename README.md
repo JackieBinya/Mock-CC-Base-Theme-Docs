@@ -1,7 +1,7 @@
 # Mock-CC-Base-Theme-Docs
 
 I created this repository to document and share my prototype for the CC WP Base Theme.
-It was created from the [Jamdocs](https://jamdocs.samuelhorn.com/) gridsome stater by Samuel Horn.
+It was created from the [Jamdocs](https://jamdocs.samuelhorn.com/) gridsome starter by Samuel Horn.
 
 Stack
 - [Gridsome](https://gridsome.org/): a static site generator for Vue.js
@@ -16,10 +16,9 @@ npm install --global @gridsome/cli
 
 1. Clone this repository in your local machine using the command:
 ```
-git clone abc
-
+git clone git@github.com:JackieBinya/Mock-CC-Base-Theme-Docs.git
 ```
-2. Run the command below to install all the necessary module
+2. Run the command below to install all the necessary modules:
 ```
 npm install
 ```
